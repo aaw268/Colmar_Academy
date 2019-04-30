@@ -1,18 +1,26 @@
+
 .container {
   margin: 0;
   max-width: 100%;
 }
 /*Navigation Section*/
 nav{
-  background-color: red;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   height: 64px;
+  border-bottom: 1px solid black;
 }
 .logo-section{
   display: flex;
   align-items: center;
   padding-left: 24px;
+}
+.logo-section span:nth-child(2){
+  color: black;
+}
+.logo-section span:nth-child(3){
+  color: silver;
 }
 nav ul{
   display: flex;
@@ -26,4 +34,46 @@ nav a{
 nav li{
   padding-left: 16px;
   padding-right: 16px;
+}
+/*Banner Section*/
+.banner.container{
+  background-color: silver;
+  height: auto;
+  z-index: 0;
+}
+.banner-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.banner-logo{
+  border: 1px solid black;
+  width: 60%;
+}
+.banner-logo img{
+  height: auto;
+  width: 95%;
+  margin-top: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  border: 1px solid blue;
+}
+.banner-text{
+line-height: 1.4;
+font-weight: bold;
+border: 1px solid black;
+width: 40%;
+}
+.banner-text a{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: dimgray;
+  color: white;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 5px;
 }
