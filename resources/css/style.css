@@ -48,7 +48,6 @@ nav li{
   width: 100%;
 }
 .banner-logo{
-  border: 1px solid black;
   width: 60%;
 }
 .banner-logo img{
@@ -62,7 +61,6 @@ nav li{
 }
 .banner-text {
 font-weight: bold;
-border: 1px solid black;
 width: 40%;
 margin-left: 24px;
 display: flex;
@@ -109,7 +107,6 @@ flex-direction: column;
 .info{
   width: 60%;
   height: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -122,35 +119,28 @@ flex-direction: column;
   height: auto;
   width: 100%;
 }
-
 .articles {
   height: auto;
   width: 40%;
   border: 1px solid red;
-  display: flex;
-  flex-direction: column;
 }
-.black{
-  border: 1px solid black;
-  height: 33.3333%;
+.articles-section{
+  height: 100%;
+  max-width: 100%;
+}
 
+.art{
+  display: flex;
+  flex-direction: row;
+  height: 33.33%;
 }
-.black img{
-margin-left: 16px;
-margin-top: 16px;
-float: left;
-width: 35%;
-margin-bottom: 16px;
+.art img{
+  width: 35%;
+  height: 100%;
 }
-.black ul{
+.details{
   width: 65%;
-  float: right;
 }
-.purple{
-  border: 1px solid purple;
-  height: 33.3333%;
-}
-.green{
-  border: 1px solid green;
-  height: 33.3333%;
+.information{
+  border: 1px solid black;
 }
