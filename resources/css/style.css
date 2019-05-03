@@ -10,8 +10,8 @@ nav{
   justify-content: space-between;
   height: 64px;
   border-bottom: 1px solid black;
+  width: 100%;
   position: fixed;
-  width: 100%
 }
 .logo-section{
   display: flex;
@@ -38,6 +38,7 @@ nav li{
   padding-right: 16px;
 }
 /*Banner Section*/
+
 .banner.container{
   background-color: silver;
   height: auto;
@@ -103,8 +104,7 @@ flex-direction: column;
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 32px;
-  background-color: gold;
+
 }
 .info{
   width: 60%;
@@ -124,7 +124,6 @@ flex-direction: column;
 .articles {
   height: 100%;
   width: 40%;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
@@ -132,12 +131,12 @@ flex-direction: column;
   height: 100%;
   width: 100%;
 }
-
 .art{
   display: flex;
   flex-direction: row;
   height: auto;
   align-items: center;
+  border: 1px solid silver;
 }
 .art img{
   width: 35%;
@@ -155,4 +154,26 @@ flex-direction: column;
 }
 .details{
   width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Learning Section*/
+.learning{
+  background-color: silver;
+  width: auto;
+  max-width: 100%;
+}
+.learning-section.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column {
+  height: auto;
+  width: 33.33%;
+}
+.cls img{
+  height: auto;
+  width: 100%;
 }
