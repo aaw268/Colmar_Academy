@@ -2,6 +2,7 @@
 .container {
   margin: 0;
   max-width: 100%;
+  font-family: Helvetica;
 }
 /*Navigation Section*/
 nav{
@@ -11,7 +12,6 @@ nav{
   height: 64px;
   border-bottom: 1px solid black;
   width: 100%;
-  position: fixed;
 }
 .logo-section{
   display: flex;
@@ -38,7 +38,6 @@ nav li{
   padding-right: 16px;
 }
 /*Banner Section*/
-
 .banner.container{
   background-color: silver;
   height: auto;
@@ -57,18 +56,17 @@ nav li{
   width: 100%;
   margin-top: 32px;
   margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 32px;
 
 }
 .banner-text {
 font-weight: bold;
 width: 40%;
-margin-left: 24px;
+margin-left: 40px;
 display: flex;
-align-items: center;
-justify-content: center;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .banner-text span{
   margin-bottom: 20px;
@@ -122,7 +120,6 @@ flex-direction: column;
 .article-column{
   width: 40%;
   height: 100%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content:  center;
@@ -133,16 +130,24 @@ flex-direction: column;
 .article-row{
   display: flex;
   flex-direction: row;
-  border: 1px solid green;
+  border: 1px solid silver;
 }
 .article-row img{
   width: 35%;
   height: 100%;
+  margin: 16px;
 }
 .article-row span{
   width: 65%;
   height: auto;
 }
+.article-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Learning Section*/
 .learning{
   background-color: silver;
@@ -156,7 +161,6 @@ flex-direction: column;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid black;
 }
 .column {
   height: auto;
@@ -165,10 +169,9 @@ flex-direction: column;
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
-  border: 1px solid black;
   margin-bottom: 32px;
-margin-top: 32px;
-background-color: white;
+  margin-top: 32px;
+  background-color: white;
 }
 .cls img{
   height: auto;
@@ -194,7 +197,6 @@ background-color: white;
 .exb-video{
   height: auto;
   width: 65%;
-  border: 1px solid red;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 32px;
@@ -202,7 +204,6 @@ background-color: white;
 .exb-column{
   height: auto;
   width: 35%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -211,9 +212,12 @@ background-color: white;
 .exb-row{
   display: flex;
   flex-direction: row;
-  border: 1px solid purple;
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  border: 1px solid silver;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
 }
 .exb-row img{
   width: 35%;
