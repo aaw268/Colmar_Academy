@@ -50,8 +50,20 @@ nav li{
 #mobile-nav{
   display: none;
 }
-@media only screen and (max-width: 560px){
-
+@media only screen and (max-width: 480px){
+ #mobile-nav{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   margin: 0;
+   height: 64px;
+ }
+ #reg-nav{
+   display: none;
+ }
+ .logo-section{
+   display: none;
+ }
 }
 /*Banner Section*/
 .banner.container{
@@ -63,6 +75,7 @@ nav li{
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-bottom: 24px;
 }
 .banner-logo{
   width: 60%;
@@ -117,6 +130,30 @@ color: #373737;
   }
   .info span:last-child{
     margin-bottom: 32px;
+  }
+  .mobile-banner-section{
+    display: none;
+  }
+  @media only screen and (max-width: 480px){
+    .banner-section{
+      display: flex;
+      flex-direction: column;
+    }
+    .banner-section img{
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 0;
+    }
+    .banner-text{
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+    .banner-text a{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 /*Information Section*/
 .content-section{
@@ -195,6 +232,31 @@ color: #373737;
 .article-text span:last-child{
   color: blue;
 }
+.mobile-photo{
+  display: none;
+}
+@media only screen and (max-width: 480px){
+  .practicing{
+    display: none;
+}
+.article-column{
+  width: 100%;
+}
+.article-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reg-photo{
+  display: none;
+}
+.mobile-photo{
+  display: flex;
+
+  width: 50%;
+  display: flex;
+}
+}
 /*Learning Section*/
 .column h2{
   font-weight: bold;
@@ -247,6 +309,21 @@ color: #373737;
 .cls ,span, h2{
   margin: 16px;
 }
+@media only screen and (max-width: 480px){
+  .cls img{
+    display: none;
+  }
+  .cls span{
+    display: none;
+  }
+  .learning-section.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
 /*Exhibit*/
 .exhibit-section{
   height: auto;
@@ -263,6 +340,10 @@ color: #373737;
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
+}
+.exb-video video{
+  width: 100%;
+  height: auto;
 }
 .exb-column{
   height: auto;
@@ -318,6 +399,15 @@ margin-top: 32px;
   margin-top: 24px;
   font-weight: bold;
   font-size: 24px;
+}
+@media only screen and (max-width: 480px){
+  .exb-column{
+    display: none;
+  }
+  .exb-video span{
+    display: none;
+  }
+
 }
 /*Footer*/
 footer{

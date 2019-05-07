@@ -16,15 +16,16 @@
         </div>
           <span>COLMAR</span><span>ACADEMY</span>
       </div>
-        <ul>
+        <ul id="reg-nav">
           <li><a href="#">On Campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">Sign in</a></li>
         </ul>
         <ul id="mobile-nav">
-          <li></li>
-          <li></li>
-          <li></li>
+            <li><img src="resources/images/ic-logo.svg" alt="mobile logo"></li>
+            <li><img src="resources/images/ic-on-campus.svg" alt="mobile logo"></li>
+            <li><img src="resources/images/ic-online.svg" alt="mobile logo"></li>
+            <li><img src="resources/images/ic-login.svg" alt="mobile logo"></li>
         </ul>
     </nav>
     <!--Banner Section-->
@@ -40,7 +41,8 @@
           </div>
         </div>
     </div>
-    <!--Content Section-->
+
+<!--Information Section-->
 
     <div class="information container">
       <div class="content-section">
@@ -54,7 +56,8 @@
         </div>
         <div class="article-column">
           <div class="article-row">
-            <img src="resources/images/information-orientation.jpg" alt="shadows walking">
+            <img src="resources/images/information-orientation.jpg" alt="shadows walking" class="reg-photo">
+            <img src="resources/images/information-orientation-mobile.jpg" alt="shadows walking" class="mobile-photo">
             <div class="article-text">
               <span>Orientation date</span>
               <span>Tue 10/11 & Wed 10/12 8am-3pm</span>
@@ -62,7 +65,8 @@
             </div>
           </div>
           <div class="article-row">
-            <img src="resources/images/information-campus.jpg" alt="campus">
+            <img src="resources/images/information-campus.jpg" alt="campus" class="reg-photo">
+            <img src="resources/images/information-campus-mobile.jpg" alt="shadows walking" class="mobile-photo">
             <div class="article-text">
               <span>Our Campus</span>
               <span>Find which campus is close by you</span>
@@ -70,7 +74,8 @@
             </div>
           </div>
           <div class="article-row">
-            <img src="resources/images/information-guest-lecture.jpg" alt="lecturer">
+            <img src="resources/images/information-guest-lecture.jpg" alt="lecturer" class="reg-photo">
+            <img src="resources/images/information-guest-lecture-mobile.jpg" alt="shadows walking" class="mobile-photo">
             <div class="article-text">
               <span>Our Guest Lecture</span>
               <span>Join a keynote with Oliver Sack about music in medical treatment</span>
@@ -129,7 +134,7 @@
       <h2 id="lazy">Thesis Exhibit</h2>
       <div class="exhibit-section">
         <div class="exb-video">
-          <video width="100%" height="auto" controls>
+          <video controls>
             <source src="resources/videos/thesis.mp4" type="video/mp4">
           </video>
           <span>Reimagine urban</span>
