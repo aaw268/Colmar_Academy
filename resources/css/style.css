@@ -223,7 +223,7 @@ color: #373737;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+width: 100%;
 }
 .article-text span:first-child{
   font-weight: bold;
@@ -323,6 +323,13 @@ color: #373737;
     width: 100%;
     height: auto;
   }
+  .column{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*Exhibit*/
 .exhibit-section{
@@ -383,6 +390,7 @@ color: #373737;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .exb-text span:nth-child(1n+1){
   margin-bottom: 8px;
