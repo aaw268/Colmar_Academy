@@ -3,6 +3,13 @@
   margin: 0;
   max-width: 100%;
   font-family: Helvetica;
+  font-family: 'Spectral', serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+#lazy{
+  font-weight: bold;
+  font-size: 32px;
 }
 /*Navigation Section*/
 nav{
@@ -22,7 +29,10 @@ nav{
   color: black;
 }
 .logo-section span:nth-child(3){
-  color: silver;
+  color: #c0b283;
+}
+.logo-section span{
+  margin: 0;
 }
 nav ul{
   display: flex;
@@ -31,15 +41,21 @@ nav ul{
 }
 nav a{
   text-decoration: none;
-  color: black;
+  color: #373737;
 }
 nav li{
   padding-left: 16px;
   padding-right: 16px;
 }
+#mobile-nav{
+  display: none;
+}
+@media only screen and (max-width: 560px){
+
+}
 /*Banner Section*/
 .banner.container{
-  background-color: silver;
+  background-color: #f4f4f4;
   height: auto;
   z-index: 0;
 }
@@ -66,10 +82,12 @@ margin-left: 40px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
+color: #373737;
 }
 .banner-text span{
   margin-bottom: 20px;
+  color: #373737
 }
 .banner-text span:nth-child(1){
   font-size: 30px;
@@ -80,13 +98,16 @@ align-items: center;
 .banner-text a{
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color: lightblue;
-  color: white;
+  background-color: #c0b283;
+  color: #373737;
   width: 80%;
   display: flex;
   justify-content: center;
   text-decoration: none;
-
+  }
+  .banner-text a:hover{
+    color: #c0b283;
+    background-color: #373737;
   }
   .info-logo img{
     margin-bottom: 32px;
@@ -115,7 +136,19 @@ align-items: center;
 .practicing img{
   width: 100%;
   height: auto;
-
+}
+.practicing-text {
+  display: flex;
+  flex-direction: column;
+  color: #373737;
+}
+.practicing-text span:nth-child(1n+1){
+  margin-bottom: 24px;
+}
+.practicing-text span:nth-child(1){
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 35px;
 }
 .article-column{
   width: 40%;
@@ -130,8 +163,15 @@ align-items: center;
 .article-row{
   display: flex;
   flex-direction: row;
-  border: 1px solid silver;
+  border: 1px solid #f4f4f4;
 }
+.article-row:hover{
+  background-color: #f4f4f4;
+}
+.article-text span:nth-child(1n+1){
+  margin: 8px;
+}
+
 .article-row img{
   width: 35%;
   height: 100%;
@@ -146,11 +186,22 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
+}
+.article-text span:first-child{
+  font-weight: bold;
+  font-size: 25px;
+}
+.article-text span:last-child{
+  color: blue;
+}
 /*Learning Section*/
+.column h2{
+  font-weight: bold;
+  font-size: 20px;
+}
 .learning{
-  background-color: silver;
+  background-color: #f4f4f4;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -162,6 +213,7 @@ align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 32px;
 }
 .column {
   height: auto;
@@ -172,7 +224,7 @@ align-items: center;
   margin: 16px;
   margin-bottom: 32px;
   margin-top: 32px;
-  background-color: white;
+  background-color: #dcd0d0;
 }
 .cls img{
   height: auto;
@@ -192,6 +244,9 @@ align-items: center;
   display: flex;
   justify-content: center;
 }
+.cls ,span, h2{
+  margin: 16px;
+}
 /*Exhibit*/
 .exhibit-section{
   height: auto;
@@ -206,6 +261,8 @@ align-items: center;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
 }
 .exb-column{
   height: auto;
@@ -214,6 +271,10 @@ align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 32px;
+}
+.exb-column span:first-child{
+  font-weight: bold;
+  font-size: 20px;
 }
 .exb-row{
   display: flex;
@@ -224,6 +285,9 @@ align-items: center;
   padding-top: 32px;
   padding-left: 16px;
   padding-bottom: 16px;
+}
+.exb-row:hover{
+  background-color: #f4f4f4;
 }
 .exb-row img{
   width: 35%;
@@ -239,12 +303,33 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
+.exb-text span:nth-child(1n+1){
+  margin-bottom: 8px;
+}
 .exhibit{
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 align-items: center;
 }
 .exhibit h2{
 margin-top: 32px;
+}
+.exb-video span:nth-child(2){
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 24px;
+}
+/*Footer*/
+footer{
+  width: 100%;
+  border-top: 1px solid gray;
+}
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 24px;
 }
