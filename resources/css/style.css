@@ -7,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
 
 }
-#lazy{
+#head{
   font-weight: bold;
   font-size: 32px;
 }
@@ -77,9 +77,7 @@ nav li{
   width: 100%;
   padding-bottom: 24px;
 }
-.banner-logo{
-  width: 60%;
-}
+
 .banner-logo img{
   height: auto;
   width: 100%;
@@ -140,10 +138,9 @@ color: #373737;
       flex-direction: column;
     }
     .banner-section img{
-      width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
       margin: 0;
+
     }
     .banner-text{
       margin-left: auto;
@@ -236,25 +233,25 @@ width: 100%;
   display: none;
 }
 @media only screen and (max-width: 480px){
-  .practicing{
-    display: none;
+.practicing{
+  display: none;
 }
 .article-column{
   width: 100%;
+  margin: 0;
 }
 .article-row{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .reg-photo{
   display: none;
 }
-.mobile-photo{
+.mobile-photo {
   display: flex;
-
-  width: 50%;
-  display: flex;
+  width: 100%;
 }
 }
 /*Learning Section*/
@@ -286,7 +283,7 @@ width: 100%;
   margin: 16px;
   margin-bottom: 32px;
   margin-top: 32px;
-  background-color: #dcd0d0;
+  background-color: #c0b283;
 }
 .cls img{
   height: auto;
@@ -330,6 +327,7 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 /*Exhibit*/
 .exhibit-section{
@@ -414,6 +412,9 @@ margin-top: 32px;
   }
   .exb-video span{
     display: none;
+  }
+  .exb-video{
+    width: 100%;
   }
 
 }
