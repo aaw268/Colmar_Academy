@@ -19,6 +19,8 @@ nav{
   height: 64px;
   border-bottom: 1px solid black;
   width: 100%;
+  position: fixed;
+
 }
 .logo-section{
   display: flex;
@@ -70,12 +72,14 @@ nav li{
   background-color: #f4f4f4;
   height: auto;
   z-index: 0;
+  padding-top: 16px;
 }
 .banner-section{
   display: flex;
   flex-direction: row;
   width: 100%;
   padding-bottom: 24px;
+  padding-top: 32px;
 }
 
 .banner-logo img{
@@ -239,6 +243,12 @@ width: 100%;
 .article-column{
   width: 100%;
   margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.article-column img{
+  width: 100%;
+  height: auto;
 }
 .article-row{
   display: flex;
@@ -285,6 +295,10 @@ width: 100%;
   margin-top: 32px;
   background-color: #c0b283;
 }
+.column:hover{
+  color: #c0b283;
+  background-color: #373737;
+}
 .cls img{
   height: auto;
   width: 100%;
@@ -327,7 +341,6 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 /*Exhibit*/
 .exhibit-section{
@@ -413,10 +426,22 @@ margin-top: 32px;
   .exb-video span{
     display: none;
   }
-  .exb-video{
+  .exhibit-section{
     width: 100%;
+    height: auto;
   }
-
+.exhibit-section video{
+  width: 100%;
+  height: auto;
+}
+.exb-video{
+  width: 100%;
+  height: auto;
+}
+.exb-video video{
+  width: 100%;
+  height: auto;
+}
 }
 /*Footer*/
 footer{
